@@ -1,0 +1,64 @@
+{
+  "name": "balloon-device",
+  "version": "0.0.1",
+  "description": "javascript 3d rendering library for webgl and webGPU",
+  "author": "wadegao2022 <wadegao2022@outlook.com>",
+  "homepage": "https://github.com/wadegao2022/balloon-device#readme",
+  "type": "module",
+  "main": "./dist/balloon-device.umd.js",
+  "module": "./dist/ballon-device.module.js",
+  "directories": {
+    "lib": "dist"
+  },
+  "source": "./src/index.ts",
+  "types": "./dist/ballon-device.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build-modern": "microbundle -i src/index.ts --no-generateTypes --no-compress --no-pkg-main --external none -f modern -o dist/balloon-device.modern.js",
+    "build-esm": "microbundle -i src/index.ts --no-generateTypes --no-pkg-main -f esm -o dist/balloon-device.module.js",
+    "build-umd": "microbundle -i src/index.ts --no-generateTypes --no-pkg-main -f umd -o dist/balloon-device.umd.js",
+    "build-cjs": "microbundle -i src/index.ts --no-generateTypes --no-pkg-main -f cjs -o dist/balloon-device.cjs",
+    "build-types": "dts-bundle-generator --project ./tsconfig.json --umd-module-name balloon_device -o ./dist/balloon-device.d.ts ./src/index.ts",
+    "build": "shx rm -rf ./dist && npm run build-modern && npm run build-types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wadegao2022/balloon-device.git"
+  },
+  "keywords": [
+    "javascript",
+    "3d",
+    "rendering",
+    "engine",
+    "webgl",
+    "webgpu",
+    "canvas"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wadegao2022/balloon-device/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@web/dev-server": "^0.1.35",
+    "dts-bundle-generator": "^6.11.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "replace": "^1.2.2",
+    "run-script-os": "^1.1.6",
+    "shx": "^0.3.4",
+    "typescript": "^4.7.3",
+    "tslib": "^2.5.0"
+  },
+  "dependencies": {
+    "@webgpu/types": "^0.1.26"
+  }
+}

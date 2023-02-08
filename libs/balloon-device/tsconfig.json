@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "es2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "strict": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": false,
+    "listEmittedFiles": true,
+    "noUnusedLocals": false,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "stripInternal": true,
+    "keyofStringsOnly": false,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@webgpu/types",
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts",
+    "tests"
+  ]
+}
