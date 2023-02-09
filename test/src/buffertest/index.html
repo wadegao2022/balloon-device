@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="origin-trial"
+    content="AqCnZyPTDPRK7MVw+bbVJoQkYndOjHKTarXCp+JTVy4VPAKv/E1SJDuFzsJGm0COxapIEanHG7oF0W+HT0ANwQUAAABJeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjgwMDAiLCJmZWF0dXJlIjoiV2ViR1BVIiwiZXhwaXJ5IjoxNjQzMTU1MTk5fQ==">
+  <title>gpu buffer test</title>
+</head>
+
+<body>
+  <div style="width:800px; margin:0 auto; text-align:center;">
+    <h1 id="title"></h1>
+    <table id="test-results" style="font-size:24px;text-align:left;width:100%;background-color:#000000;color:#ffffff">
+      <tr>
+        <th id="name" style="text-align: left; width:30%;">Test name</th>
+        <th id="result" style="text-align: left; width:70%;">Test result</th>
+      </tr>
+    </table>
+  </div>
+  <canvas id="webgl" style="display: none; width: 16; height: 16;" width="100" height="100"></canvas>
+  <canvas id="webgl2" style="display: none; width: 16; height: 16;" width="100" height="100"></canvas>
+  <canvas id="webgpu" style="display: none; width: 16; height: 16;" width="100" height="100"></canvas>
+  <script type="module" src="js/buffertest.js"></script>
+</body>
+
+</html>

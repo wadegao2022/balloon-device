@@ -11,7 +11,7 @@
     "lib": "dist"
   },
   "source": "./src/index.ts",
-  "types": "./dist/ballon-device.d.ts",
+  "types": "./dist/balloon-device.d.ts",
   "files": [
     "dist"
   ],

@@ -432,6 +432,10 @@
     {
       "packageName": "balloon-device",
       "projectFolder": "libs/balloon-device"
+    },
+    {
+      "packageName": "test",
+      "projectFolder": "test"
     }
   ]
 }

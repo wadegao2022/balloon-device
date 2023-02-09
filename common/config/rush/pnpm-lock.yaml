@@ -42,6 +42,51 @@ importers:
       tslib: 2.5.0
       typescript: 4.9.5
 
+  ../../test:
+    specifiers:
+      '@types/colors': ^1.2.1
+      '@types/diff': ^5.0.2
+      '@typescript-eslint/eslint-plugin': ^5.51.0
+      '@typescript-eslint/parser': ^5.51.0
+      '@web/dev-server': ^0.1.35
+      '@webgpu/types': ^0.1.26
+      balloon-device: workspace:*
+      colors: ^1.4.0
+      diff: ^5.0.0
+      eslint: ^8.33.0
+      eslint-config-prettier: ^8.6.0
+      eslint-plugin-import: ^2.27.5
+      eslint-plugin-prettier: ^4.2.1
+      microbundle: ^0.15.1
+      prettier: ^2.8.4
+      replace: ^1.2.2
+      run-script-os: ^1.1.6
+      shx: ^0.3.4
+      tslib: ^2.5.0
+      typescript: ^4.7.3
+    dependencies:
+      '@types/colors': 1.2.1
+      '@types/diff': 5.0.2
+      '@webgpu/types': 0.1.26
+      balloon-device: link:../libs/balloon-device
+      colors: 1.4.0
+      diff: 5.1.0
+    devDependencies:
+      '@typescript-eslint/eslint-plugin': 5.51.0_0fb7d53160f0e41e16372a0eab719cf9
+      '@typescript-eslint/parser': 5.51.0_eslint@8.33.0+typescript@4.9.5
+      '@web/dev-server': 0.1.35
+      eslint: 8.33.0
+      eslint-config-prettier: 8.6.0_eslint@8.33.0
+      eslint-plugin-import: 2.27.5_eslint@8.33.0
+      eslint-plugin-prettier: 4.2.1_80353385657558523d8688bf9d3ac177
+      microbundle: 0.15.1
+      prettier: 2.8.4
+      replace: 1.2.2
+      run-script-os: 1.1.6
+      shx: 0.3.4
+      tslib: 2.5.0
+      typescript: 4.9.5
+
 packages:
 
   /@ampproject/remapping/2.2.0:
@@ -1547,6 +1592,13 @@ packages:
       '@types/node': 18.13.0
     dev: true
 
+  /@types/colors/1.2.1:
+    resolution: {integrity: sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==}
+    deprecated: This is a stub types definition. colors provides its own type definitions, so you don't need this installed.
+    dependencies:
+      colors: 1.4.0
+    dev: false
+
   /@types/command-line-args/5.2.0:
     resolution: {integrity: sha512-UuKzKpJJ/Ief6ufIaIzr3A/0XnluX7RvFgwkV89Yzvm77wCh1kFaFmqN8XEnGcN62EuHdedQjEMb8mYxFLGPyA==}
     dev: true
@@ -1569,6 +1621,10 @@ packages:
       '@types/keygrip': 1.0.2
       '@types/node': 18.13.0
     dev: true
+
+  /@types/diff/5.0.2:
+    resolution: {integrity: sha512-uw8eYMIReOwstQ0QKF0sICefSy8cNO/v7gOTiIy9SbwuHyEecJUm7qlgueOO5S1udZ5I/irVydHVwMchgzbKTg==}
+    dev: false
 
   /@types/estree/0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
@@ -2308,6 +2364,11 @@ packages:
     resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
     dev: true
 
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
+    dev: false
+
   /command-line-args/5.2.1:
     resolution: {integrity: sha512-H4UfQhZyakIjC74I9d34fGYDwk3XpSr17QhEd0Q3I9Xq1CETHo4Hcuo87WyWHpAF1aSLjLRf5lD9ZGX2qStUvg==}
     engines: {node: '>=4.0.0'}
@@ -2581,6 +2642,11 @@ packages:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
     dev: true
+
+  /diff/5.1.0:
+    resolution: {integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==}
+    engines: {node: '>=0.3.1'}
+    dev: false
 
   /dir-glob/3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}

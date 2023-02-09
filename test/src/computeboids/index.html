@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" style="width:100%;height:100%;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="origin-trial"
+    content="AqCnZyPTDPRK7MVw+bbVJoQkYndOjHKTarXCp+JTVy4VPAKv/E1SJDuFzsJGm0COxapIEanHG7oF0W+HT0ANwQUAAABJeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjgwMDAiLCJmZWF0dXJlIjoiV2ViR1BVIiwiZXhwaXJ5IjoxNjQzMTU1MTk5fQ==">
+  <title>compute boids</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width:100%; height:100%;">
+    <canvas id="canvas" style="width:100%;height:100%;"></canvas>
+  </div>
+  <script type="text/template" id="main-ui">
+    <html>
+        <head>
+            <style>
+                html, body, #scene-view {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                }
+                #scene-view {
+                    align-items: flex-start;
+                }
+                #button-group {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    left: 0px;
+                    top: 0px;
+                    padding: 10px;
+                    width: 200px;
+                    height: auto;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                #button-group > scrollbar {
+                  margin-top: 10px;
+                  background-color: #aaa;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="scene-view">
+                <div id="button-group">
+                  <scrollbar id="filter-size" orientation="horizonal" stepValue="2" rangestart="2" rangeend="32" buttonsize="12" blocksize="12" style="height: 20px;" value="2"></scrollbar>
+                  <scrollbar id="iterations" orientation="horizonal" stepValue="1" rangestart="1" rangeend="10" buttonsize="12" blocksize="12" style="height: 20px;" value="2"></scrollbar>
+                </div>
+            </div>
+        </body>
+    </html>
+  </script>
+  <script type="module" src="js/computeboids.js"></script>
+</body>
+
+</html>
