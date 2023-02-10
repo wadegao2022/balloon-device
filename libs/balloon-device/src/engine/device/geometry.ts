@@ -1,9 +1,9 @@
-import { TypedArray } from '../defs';
 import { PrimitiveType } from './base_types';
 import { GPUResourceUsageFlags, VertexInputLayout, StructuredBuffer, IndexBuffer, VertexStepMode } from './gpuobject';
 import { VertexData } from './vertexdata';
 import { PBStructTypeInfo } from './builder';
 import type { Device } from './device';
+import type { TypedArray } from '../../shared';
 
 export class Geometry {
   /** @internal */

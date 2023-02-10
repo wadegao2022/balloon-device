@@ -1,5 +1,5 @@
 import type { ListIterator } from "../../shared";
-import { Texture2D } from "../device";
+import type { Texture2D } from "../device";
 import type { Matrix4x4, XForm } from "../math";
 import type { BoundingVolume } from "./bounding_volume";
 import type { Camera } from "./camera";

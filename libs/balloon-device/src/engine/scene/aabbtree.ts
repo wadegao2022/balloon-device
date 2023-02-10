@@ -1,6 +1,6 @@
 import { PrimitiveType } from '../device';
 import { AABB, Vector3, Matrix4x4, Ray } from '../math';
-import type { TypedArray } from '../defs';
+import type { TypedArray } from '../../shared';
 
 interface PrimitivesInfo {
   vertices: Vector3[];

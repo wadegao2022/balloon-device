@@ -1,4 +1,4 @@
-import { Device, BaseTexture, TextureFilter, TextureWrapping, GPUResourceUsageFlags, TextureFormat, Texture2D, GPUObject, isSRGBTextureFormat } from '../../device'
+import { Device, BaseTexture, TextureFilter, TextureWrapping, GPUResourceUsageFlags, TextureFormat, Texture2D, GPUObject } from '../../device'
 import { AssetHierarchyNode, AssetSkeleton, AssetSubMeshData, SharedModel } from './model';
 import { GLTFLoader } from './loaders/gltf';
 import { WebImageLoader } from './loaders/image/webimage_loader';
@@ -10,7 +10,7 @@ import { Skeleton } from '../skeleton';
 import { SkinnedBoundingBox } from '../animation';
 import { Vector3 } from '../../math';
 import { BoundingBox } from '../bounding_volume';
-import { isPowerOf2, nextPowerOf2 } from '../../defs';
+import { isPowerOf2, nextPowerOf2 } from '../../../shared';
 import { GammaBlitter } from '../blitter';
 import { getSheenLutLoader, sheenLUTTextureName } from './builtin';
 import { GraphNode } from '../graph_node';

@@ -1,7 +1,7 @@
 import { WebGPUObject } from './gpuobject_webgpu';
 import { UploadRingBuffer, UploadBuffer } from './uploadringbuffer';
 import { GPUResourceUsageFlags, GPUDataBuffer } from '../gpuobject';
-import type { TypedArray, TypedArrayConstructor } from '../../defs';
+import type { TypedArray, TypedArrayConstructor } from '../../../shared';
 import type { WebGPUDevice } from './device';
 
 export class WebGPUBuffer extends WebGPUObject<GPUBuffer> implements GPUDataBuffer<GPUBuffer> {

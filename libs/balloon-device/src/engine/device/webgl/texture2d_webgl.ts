@@ -6,7 +6,7 @@ import { getDDSMipLevelsInfo } from '../../support/dds';
 import { GPUResourceUsageFlags, TextureImageElement, TextureMipmapData, Texture2D, GPUDataBuffer } from '../gpuobject';
 import type { WebGLDevice } from './device_webgl';
 import type { WebGLTextureCap } from './capabilities_webgl';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 
 export class WebGLTexture2D extends WebGLBaseTexture implements Texture2D<WebGLTexture> {
   constructor(device: WebGLDevice) {

@@ -2,7 +2,7 @@ import { WebGLGPUObject } from './gpuobject_webgl';
 import { TextureCaps } from '../device';
 import { TextureTarget, TextureFilter, TextureWrapping, TextureFormat, CompareFunc, isCompressedTextureFormat, isDepthTextureFormat, isFloatTextureFormat, isIntegerTextureFormat, isSignedTextureFormat } from '../base_types';
 import { GPUResourceUsageFlags, SamplerOptions, BaseTexture } from '../gpuobject';
-import { isPowerOf2 } from '../../defs';
+import { isPowerOf2 } from '../../../shared';
 import { cubeMapFaceMap, textureTargetMap } from './constants_webgl';
 import { isWebGL2 } from './utils';
 import { WebGLEnum } from './webgl_enum';

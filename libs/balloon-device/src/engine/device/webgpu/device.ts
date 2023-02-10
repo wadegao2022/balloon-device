@@ -48,7 +48,7 @@ import { textureFormatInvMap } from './constants_webgpu';
 import { WebGPUBaseTexture } from './basetexture_webgpu';
 import type { VertexData } from '../vertexdata';
 import type { PBStructTypeInfo } from '../builder';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 import type { WebGPURenderPass } from './renderpass_webgpu';
 import type { WebGPUComputePass } from './computepass_webgpu';
 

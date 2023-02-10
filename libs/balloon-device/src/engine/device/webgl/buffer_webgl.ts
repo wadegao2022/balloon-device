@@ -1,9 +1,9 @@
-import { TypedArray } from '../../defs';
 import { WebGLGPUObject } from './gpuobject_webgl';
 import { WebGLEnum } from './webgl_enum';
 import { GPUResourceUsageFlags, GPUDataBuffer } from '../gpuobject';
 import { isWebGL2 } from './utils';
 import type { WebGLDevice } from './device_webgl';
+import type { TypedArray } from '../../../shared';
 
 export class WebGLGPUBuffer extends WebGLGPUObject<WebGLBuffer> implements GPUDataBuffer<WebGLBuffer> {
   protected _size: number;

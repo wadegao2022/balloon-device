@@ -1,5 +1,5 @@
 import { PBPrimitiveType } from './builder/types';
-import type { TypedArray, TypedArrayConstructor } from '../defs';
+import type { TypedArray, TypedArrayConstructor } from '../../shared';
 import type { StructuredValue, UniformBufferLayout, StructuredBuffer } from './gpuobject';
 
 

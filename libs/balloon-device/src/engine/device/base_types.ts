@@ -2,8 +2,7 @@
  * Basic types
  */
 
-import { IterableWrapper, TypedArray } from '../defs';
-import { Constructor } from '../../shared/utils';
+import { IterableWrapper, TypedArray, Constructor } from '../../shared';
 
 export type WebGLContext = WebGLRenderingContext | WebGL2RenderingContext;
 /*

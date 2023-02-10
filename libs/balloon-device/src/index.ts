@@ -25,7 +25,6 @@ export * from './dom/components/select';
 export * from './dom/components/slider';
 export * from './dom/components/scrollbar';
 export * from './dom/hittest_visitor';
-export * from './engine/defs';
 export * from './engine/math';
 export * from './engine/device';
 export * from './engine/core';

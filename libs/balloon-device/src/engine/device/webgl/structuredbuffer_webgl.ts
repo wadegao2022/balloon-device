@@ -1,9 +1,9 @@
 import { WebGLGPUBuffer } from "./buffer_webgl";
-import { TypedArray } from "../../defs";
 import { StructuredBufferData } from "../uniformdata";
 import { PBTypeInfo, PBStructTypeInfo, PBPrimitiveType } from "../builder";
 import { GPUResourceUsageFlags, StructuredBuffer, StructuredValue } from "../gpuobject";
 import type { WebGLDevice } from './device_webgl';
+import type { TypedArray } from "../../../shared";
 
 export class WebGLStructuredBuffer extends WebGLGPUBuffer implements StructuredBuffer {
   private _structure: PBStructTypeInfo;

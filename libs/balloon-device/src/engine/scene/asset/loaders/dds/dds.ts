@@ -1,6 +1,5 @@
-import {FileLoader} from '../../../../../shared';
-import {TextureFormat, TextureMipmapLevelData, TextureMipmapData} from '../../../../device';
-import type {TypedArray} from '../../../../defs';
+import { FileLoader, TypedArray } from '../../../../../shared';
+import { TextureFormat, TextureMipmapLevelData, TextureMipmapData } from '../../../../device';
 
 const DDSHeaderSize = 31; // in DWORD
 const DDSHeaderSizeExtended = 31 + 5; // in DWORD

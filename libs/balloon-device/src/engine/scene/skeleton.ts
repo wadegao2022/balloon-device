@@ -1,8 +1,7 @@
-import { nextPowerOf2 } from "../defs";
+import { nextPowerOf2 } from "../../shared";
 import { Device, GPUResourceUsageFlags, Texture2D, TextureFormat } from "../device";
 import { Matrix4x4, Vector3 } from "../math";
 import { SkinnedBoundingBox } from "./animation";
-import { BoundingBox } from "./bounding_volume";
 import type { SceneNode } from "./scene_node";
 
 const tmpV0 = new Vector3();

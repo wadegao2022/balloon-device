@@ -1,10 +1,9 @@
 import { Vector4 } from '../math';
 import { PrimitiveType, TextureFormat } from './base_types';
-import { REventTarget, REvent } from '../../shared';
+import { REventTarget, REvent, TypedArray } from '../../shared';
 import { CPUTimer, ITimer } from './timer';
 import type { RenderStateSet } from './render_states';
 import type { VertexData } from './vertexdata';
-import type { TypedArray } from '../defs';
 import type {
   IFrameBufferOptions,
   SamplerOptions,

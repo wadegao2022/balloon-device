@@ -3,7 +3,7 @@ import type { Primitive } from "../primitive";
 import type { Texture2D, TextureSampler } from "../../device";
 import type { StandardMaterial } from "../materiallib";
 import type { Interpolator } from "../interpolator";
-import type { TypedArray } from "../../defs";
+import type { TypedArray } from "../../../shared";
 
 export class AssetModelObject {
   name: string;

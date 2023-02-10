@@ -1,41 +1,6 @@
 import { VERTEX_ATTRIB_POSITION, VERTEX_ATTRIB_BLEND_INDICES, VERTEX_ATTRIB_BLEND_WEIGHT, VERTEX_ATTRIB_TANGENT, VERTEX_ATTRIB_NORMAL } from '../../device';
 import { ProgramBuilder, PBShaderExp, PBInsideFunctionScope, PBPrimitiveType } from '../../device/builder';
 
-/**
- * // IBL
- * float roughnessToMip(float roughness, float maxLod) {
- *  return roughness * maxLod;
- * }
- * vec3 envDFGLazarov(vec3 specularColor, float gloss, float NdotV) {
- *  vec4 p0 = vec4(0.5745, 1.548, -0.02397, 1.301);
- *  vec4 p1 = vec4(0.5753, -0.2511, -0.02066, 0.4755);
- *  vec4 t = gloss * p0 + p1;
- *  float bias = clamp(t.x * min(t.y, exp2(-7.672 * NdotV)) + t.z, 0.0, 1.0);
- *  float delta = clamp(t.w, 0.0, 1.0);
- *  float scale = delta - bias;
- *  bias *= clamp(50.0 * specularColor.y, 0.0, 1.0);
- *  return specularColor * scale + bias;
- * }
- * vec3 fresnelSchlickRoughness(vec3 F0, float roughness, float NdotV) {
- *  return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(1 - NdotV, 5.0);
- * }
- * vec3 envRadiance(vec3 F, vec3 F0, vec3 reflectionVec, float metallic, float roughness, float NdotV) {
- *  vec3 irradiance = textureLod(irradianceMap, reflectionVec, roughnessToMip(roughness));
- *  vec3 brdf = envDFGLazarov(F0, metallic, NdotV);
- *  return irrandiance * F * brdf; // PI must be premultiplied
- * }
- * vec3 envIrradiance(vec3 F, vec3 normal, float metallic) {
- *  vec3 radiance = texture(randianceMap, normal);
- *  return radiance * (1.0 - metallic) * (vec3(1.0) - F) / PI;
- * }
- * vec3 envIndirect(vec3 albedo, vec3 F0, vec3 normal, vec3 reflectionVec, float metallic, float roughness, float NdotV) {
- *  vec3 F = fresnelSchlickRoughness(F0, roughness, NdotV);
- *  vec3 radiance = envRandiance(F, F0, reflectionVec, metallic, roughness, NdotV);
- *  vec3 irradiance = envIrradiance(F, normal, metallic);
- *  return radiance * albedo + irradiance;
- * }
- */
-
 export const MAX_BONE_MATRIX_UNIFORM = 36;
 
 export class ShaderLib {

@@ -2,7 +2,7 @@ import { WebGPUBuffer } from "./buffer_webgpu";
 import { StructuredBufferData } from "../uniformdata";
 import { GPUResourceUsageFlags, StructuredBuffer, StructuredValue } from "../gpuobject";
 import * as typeinfo from '../builder/types';
-import type { TypedArray } from "../../defs";
+import type { TypedArray } from "../../../shared";
 import type { WebGPUDevice } from './device';
 
 const vertexFormatTable: { [id: string]: GPUVertexFormat } = {

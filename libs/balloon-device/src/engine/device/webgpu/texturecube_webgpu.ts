@@ -1,9 +1,8 @@
-import { FileLoader, ImageLoader } from '../../../shared';
+import { FileLoader, ImageLoader, TypedArray } from '../../../shared';
 import { getDDSMipLevelsInfo } from '../../support/dds';
 import { TextureFormat, TextureTarget, linearTextureFormatToSRGB, getTextureFormatBlockWidth, getTextureFormatBlockHeight, getTextureFormatBlockSize } from '../base_types';
 import { WebGPUBaseTexture } from './basetexture_webgpu';
 import { GPUResourceUsageFlags, TextureMipmapData, TextureCube, TextureImageElement, GPUDataBuffer } from '../gpuobject';
-import { TypedArray } from '../../defs';
 import { CubeFace } from '../../math';
 import type { WebGPUDevice } from './device';
 

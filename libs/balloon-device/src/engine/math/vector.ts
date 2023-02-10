@@ -2,7 +2,7 @@
  *  Math type definitions
  */
 
-import { IterableWrapper, formatNumber, numberEquals, numberClamp } from '../defs';
+import { IterableWrapper, formatNumber, numberEquals, numberClamp } from '../../shared';
 
 export enum CubeFace {
   PX = 0,

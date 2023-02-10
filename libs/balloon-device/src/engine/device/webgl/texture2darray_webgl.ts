@@ -2,7 +2,7 @@ import { TextureTarget, TextureFormat, linearTextureFormatToSRGB } from '../base
 import { textureTargetMap } from './constants_webgl';
 import { WebGLBaseTexture } from './basetexture_webgl';
 import { GPUResourceUsageFlags, TextureImageElement, Texture2DArray, GPUDataBuffer } from '../gpuobject';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 import type { WebGLDevice } from './device_webgl';
 import type { WebGLTextureCap } from './capabilities_webgl';
 

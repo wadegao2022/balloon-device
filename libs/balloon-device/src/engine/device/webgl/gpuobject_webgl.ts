@@ -1,7 +1,6 @@
-import { genDefaultName } from '../misc';
 import { Device, DeviceGPUObjectRenameEvent } from '../device';
+import { genDefaultName, BindGroup, VertexInputLayout, TextureSampler, BaseTexture, Texture2D, Texture2DArray, Texture3D, TextureCube, TextureVideo, FrameBuffer, GPUDataBuffer, GPUProgram, GPUObject } from '../gpuobject';
 import type { WebGLDevice } from './device_webgl';
-import type { BindGroup, VertexInputLayout, TextureSampler, BaseTexture, Texture2D, Texture2DArray, Texture3D, TextureCube, TextureVideo, FrameBuffer, GPUDataBuffer, GPUProgram, GPUObject } from '../gpuobject';
 
 let _uniqueId = 0;
 

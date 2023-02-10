@@ -43,12 +43,12 @@ import { SharedModel, AssetHierarchyNode, AssetMeshData, AssetSkeleton, AssetSce
 import { BoundingBox } from '../../../bounding_volume';
 import { Primitive } from '../../../primitive';
 import { StandardMaterial, UnlitMaterial, PBRMetallicRoughnessMaterial, PBRSpecularGlossinessMaterial } from '../../../materiallib';
-import { TypedArray } from '../../../../defs';
 import { ComponentType, GLTFAccessor } from './helpers';
 import { Interpolator, InterpolationMode, InterpolationTarget } from '../../../interpolator';
 import { AssetManager } from '../../assetmanager';
 import { AbstractModelLoader } from '../loader';
 import type { AnimationChannel, AnimationSampler, GlTf, Material, TextureInfo } from './gltf';
+import type { TypedArray } from '../../../../../shared';
 
 
 export interface GLTFContent extends GlTf {

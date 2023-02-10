@@ -8,7 +8,7 @@ import type { WebGLBaseTexture } from './basetexture_webgl';
 import type { WebGLGPUBuffer } from './buffer_webgl';
 import type { WebGLDevice } from './device_webgl';
 import type { WebGLStructuredBuffer } from './structuredbuffer_webgl';
-import type { TypedArrayConstructor } from '../../defs';
+import type { TypedArrayConstructor } from '../../../shared';
 import { WebGLTextureSampler } from './sampler_webgl';
 
 type UniformBlockArray = Int32Array | Uint32Array | Float32Array;

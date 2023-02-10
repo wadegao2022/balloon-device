@@ -7,7 +7,7 @@ import { WebGLGPUObject } from './gpuobject_webgl';
 import type { PBStructTypeInfo } from '../builder';
 import type { WebGLDevice } from './device_webgl';
 import type { BindGroupLayout, BaseTexture, StructuredBuffer, TextureSampler, BindGroup, BindGroupLayoutEntry } from '../gpuobject';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 
 export class WebGLBindGroup extends WebGLGPUObject<unknown> implements BindGroup {
   private _layout: BindGroupLayout;

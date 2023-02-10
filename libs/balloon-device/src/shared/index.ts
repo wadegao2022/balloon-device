@@ -1,4 +1,5 @@
 export * from './values';
+export * from './misc';
 export * from './utils';
 export * from './font';
 export * from './event';

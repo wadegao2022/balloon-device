@@ -61,18 +61,6 @@ export function formatNumber(
   return tl > 0 ? (Array(totalLength).join(ch) + fixed).substr(-totalLength) : fixed;
 }
 
-function measureEpsl(a: number) {
-  if (a < 0) {
-    a = -a;
-  }
-  let k = 10000;
-  while (a > 0) {
-    a = Math.floor(a / 10);
-    k /= 10;
-  }
-  return 1 / k;
-}
-
 const f = new Float32Array(1);
 export function toFloat32(a: number): number {
   f[0] = a;

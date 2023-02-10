@@ -1,10 +1,8 @@
 import { TextureTarget, TextureFormat, getTextureFormatBlockWidth, getTextureFormatBlockHeight, getTextureFormatBlockSize, linearTextureFormatToSRGB } from '../base_types';
 import { WebGPUBaseTexture } from './basetexture_webgpu';
 import { GPUResourceUsageFlags, TextureImageElement, Texture3D, GPUDataBuffer } from '../gpuobject';
-import { textureFormatMap } from './constants_webgpu';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 import type { WebGPUDevice } from './device';
-import type { WebGPUTextureCap } from './capabilities_webgpu';
 
 export class WebGPUTexture3D extends WebGPUBaseTexture implements Texture3D<GPUTexture> {
   constructor(device: WebGPUDevice) {

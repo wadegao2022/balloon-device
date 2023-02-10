@@ -1,5 +1,5 @@
 import { Quaternion } from "../math";
-import { numberClamp, TypedArray } from "../defs";
+import { numberClamp, TypedArray } from "../../shared";
 
 export enum InterpolationMode {
   UNKNOWN = 0,

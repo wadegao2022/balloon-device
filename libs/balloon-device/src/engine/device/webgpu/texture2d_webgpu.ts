@@ -1,9 +1,8 @@
-import { ImageLoader, FileLoader } from '../../../shared';
+import { ImageLoader, FileLoader, TypedArray } from '../../../shared';
 import { TextureTarget, TextureFormat, linearTextureFormatToSRGB, getTextureFormatBlockWidth, getTextureFormatBlockHeight, getTextureFormatBlockSize } from '../base_types';
 import { WebGPUBaseTexture } from './basetexture_webgpu';
 import { getDDSMipLevelsInfo } from '../../support/dds';
 import { GPUResourceUsageFlags, TextureImageElement, TextureMipmapData, Texture2D, GPUDataBuffer } from '../gpuobject';
-import type { TypedArray } from '../../defs';
 import type { WebGPUDevice } from './device';
 
 export class WebGPUTexture2D extends WebGPUBaseTexture implements Texture2D<GPUTexture> {

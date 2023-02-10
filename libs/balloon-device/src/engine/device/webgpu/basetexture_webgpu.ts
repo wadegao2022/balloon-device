@@ -5,7 +5,7 @@ import { GPUResourceUsageFlags, SamplerOptions, BaseTexture, TextureSampler, GPU
 import { UploadRingBuffer, UploadTexture, UploadImage } from './uploadringbuffer';
 import type { WebGPUDevice } from './device';
 import type { WebGPUBuffer } from './buffer_webgpu';
-import type { TypedArray } from '../../defs';
+import type { TypedArray } from '../../../shared';
 import type { WebGPUTextureCap, ITextureFormatInfoWebGPU } from './capabilities_webgpu';
 import { textureFormatMap } from './constants_webgpu';
 

@@ -1,6 +1,5 @@
-import { FileLoader, ImageLoader } from '../../../shared';
+import { FileLoader, ImageLoader, TypedArray } from '../../../shared';
 import { getDDSMipLevelsInfo } from '../../support/dds';
-import { TypedArray } from '../../defs';
 import { TextureFormat, TextureTarget, linearTextureFormatToSRGB } from '../base_types';
 import { WebGLBaseTexture } from './basetexture_webgl';
 import { textureTargetMap, cubeMapFaceMap } from './constants_webgl';
